@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  
+  <head data-gwd-animation-mode="quickMode">
+    <title>BibSearchInterface</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="generator" content="Google Web Designer 1.0.1.1025">
+    <style type="text/css">
+      html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+      }
+      body {
+        background-color: transparent;
+        -webkit-transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+        -webkit-transform-style: preserve-3d;
+      }
+      .gwd-div-bhin {
+        position: absolute;
+        font-family:'Times New Roman';
+        color: rgb(0, 0, 0);
+        width: 562px;
+        height: 95px;
+        -webkit-transform-origin: 161.5px 27.5px 0px;
+        -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+        left: 299px;
+        top: 45px;
+        text-align: center;
+      }
+      .gwd-span-oa6d {
+        font-family:'Josefin Slab';
+        font-size: 72px;
+      }
+      .gwd-button-crdq {
+        position: absolute;
+        width: 281px;
+        height: 46px;
+        left: 299px;
+        top: 197px;
+        font-family:'Josefin Slab';
+        font-size: 24px;
+      }
+      .gwd-button-eps7 {
+        position: absolute;
+        width: 281px;
+        height: 46px;
+        left: 580px;
+        top: 197px;
+        font-family:'Josefin Slab';
+        font-size: 24px;
+      }
+      .gwd-p-jd3v {
+        position: absolute;
+        width: 562px;
+        height: 43px;
+        left: 299px;
+        top: 285px;
+        font-family:'Josefin Slab';
+        font-size: 24px;
+      }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Oxygen|Merriweather|Questrial|Armata|Quicksand|Josefin+Slab" rel="stylesheet" type="text/css">
+  </head>
+  
+  <body>
+    <div class="gwd-div-bhin"><span class="gwd-span-oa6d">BibTex Search</span>
+
+    </div>
+    <form action="{{ url_for('insert') }}" method="GET">
+    <button class="gwd-button-crdq" value="insert">Insert Collection</button>
+   </form>
+    <form action="{{ url_for('query') }}" method="GET">
+     <button class="gwd-button-eps7" value="query">Run a query</button>
+     </form>
+     <p class="gwd-p-jd3v">These are your available collections: {{ coll_names }}</p>
+      </form>
+     
+  </body>
+
+</html>
